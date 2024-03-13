@@ -1,0 +1,60 @@
+@import "./ModalforAwardSession.module.scss";
+@import "../utils/Color.scss";
+
+.modalInputRadio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  input {
+    accent-color: $lightBlue;
+  }
+
+  label {
+    margin-left: 10px;
+  }
+}
+
+.modalTable {
+  display: flex;
+  flex-direction: column;
+  margin-block: 20px;
+}
+
+.modalTableTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $yellow2;
+
+  padding: 10px;
+  border-radius: 5px;
+}
+.modalTableTitle1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $lightGrey;
+  padding: 10px;
+  border-radius: 5px;
+  select {
+    border: 1px solid $lightGrey;
+    padding: 5px;
+    font-size: 12px;
+  }
+  input {
+    margin-right: 10px;
+  }
+}
+
+.modalTableTitleItem {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  padding: 2px;
+  label {
+    font-size: 12px;
+  }
+}

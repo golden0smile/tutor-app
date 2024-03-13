@@ -1,0 +1,104 @@
+.main_container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  border-radius: 16px;
+  border: 1px solid #898c96;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.fs_14 {
+  font-size: 14px;
+}
+
+.fs_24 {
+  font-size: 24px;
+}
+
+.fs_18 {
+  font-size: 18px;
+}
+
+.detail_container {
+  padding: 5% 10% 5% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.PersonalInfo {
+  span {
+    color: #234094;
+    /* 16/M */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+.infoSection {
+  display: flex;
+  padding: 20px 25px 20px 25px;
+  width: 100%;
+  flex-direction: column;
+  gap: 15px;
+  @media (max-width: 1024px) {
+    padding: 0px 0 20px 0;
+  }
+  span {
+    color: #20365b;
+  }
+}
+.textSecondary {
+  color: #404040;
+  font-weight: 700;
+}
+
+.innerSection {
+  display: grid;
+  // flex-direction: row !important;
+  grid-template-columns: 1fr 1fr;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  a {
+    text-decoration: none;
+  }
+  .salutation_inner {
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    color: #404040;
+    line-height: 20px;
+  }
+}
+.addressSection {
+  grid-template-columns: 1fr !important;
+
+  .textSecondary {
+    color: #404040;
+    font-weight: 700;
+    // text-wrap: wrap !important;
+    overflow-wrap: anywhere;
+  }
+}
+
+.pInfo {
+  span {
+    color: #234094;
+  }
+
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  align-self: stretch;
+}

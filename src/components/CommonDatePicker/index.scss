@@ -1,0 +1,124 @@
+.rdrInRange {
+  background-color: #0010350a;
+}
+
+span.rdrDayNumber span {
+  color: black !important;
+}
+
+.rdrStartEdge ~ .rdrDayNumber span,
+.rdrEndEdge ~ .rdrDayNumber span {
+  color: white !important;
+}
+
+.rdrDayEndOfMonth .rdrInRange,
+.rdrDayEndOfMonth .rdrStartEdge,
+.rdrDayEndOfWeek .rdrInRange,
+.rdrDayEndOfWeek .rdrStartEdge {
+  border-radius: 0px;
+}
+
+.rdrDayStartOfMonth .rdrInRange,
+.rdrDayStartOfMonth .rdrEndEdge,
+.rdrDayStartOfWeek .rdrInRange,
+.rdrDayStartOfWeek .rdrEndEdge {
+  border-radius: 0;
+}
+
+.rdrDay {
+  aspect-ratio: 1;
+}
+
+.rdrStartEdge {
+  background-color: #001035;
+  color: white;
+  right: 3px;
+  padding: 0px;
+  border-radius: 0px;
+}
+
+.rdrEndEdge {
+  background-color: #001035;
+  right: 3px;
+  padding: 0px;
+  border-radius: 0;
+}
+
+.datepickerPostion {
+  position: fixed;
+  top: 55%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 999; /* Adjust z-index as needed to ensure it's on top */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rdrDayHovered {
+  border-radius: 0px !important;
+}
+.rdrDayStartPreview {
+  border-radius: 0px !important;
+}
+
+.rdrDayEndPreview {
+  border-radius: 0px !important;
+}
+.dashboard-date-picker {
+  position: absolute;
+  z-index: 99;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  left: 0;
+  top: calc(100% + 16px);
+  background-color: #ffffff;
+  .date-picker-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 10px;
+    gap: 10px;
+    font-size: 14px;
+    .primaryBTn {
+      border-radius: 2px;
+      background: #ffffff;
+      border: 1px solid #234094;
+      color: #234094;
+      &:hover {
+        color: white;
+        background: rgba(35, 63, 148, 0.396);
+      }
+    }
+    .cancelBTn {
+      background: #d42b2b;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2f8fd;
+  border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1f9bd7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #234094;
+}
+
+/* background-color: #0010350A; /* Change this to your desired color */
+/* color: black !important; */

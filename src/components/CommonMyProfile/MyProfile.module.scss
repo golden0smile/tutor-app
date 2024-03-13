@@ -1,0 +1,261 @@
+.profileModal > div {
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+}
+.profileModal {
+  .header {
+    .headerTitle {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+    .headerTimeline {
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+  }
+  .body {
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    .bodyContainer {
+      display: flex;
+      align-items: flex-start;
+      gap: 22px;
+      .profileSection {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 26px;
+        .imageWrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          position: relative;
+          .image {
+            display: flex;
+            width: 172px;
+            height: 172px;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+          }
+          .titleSection {
+            color: #666e82;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+          }
+          .editImg {
+            position: absolute;
+            bottom: 40px;
+            right: 15px;
+            background: #ccc;
+            border-radius: 50px;
+            padding: 2px;
+            cursor: pointer;
+          }
+        }
+        .profileDetailsWrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          .name {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .titleWrapper {
+              display: flex;
+              width: 182px;
+              justify-content: space-between;
+              align-items: center;
+              .lable {
+                color: #000;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+              }
+              .img {
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+              }
+            }
+            .value {
+              color: #000;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 24px;
+              overflow-wrap: anywhere;
+            }
+          }
+        }
+      }
+      .deviederSection {
+        border: 1px solid #e2e9f0;
+        height: calc(100vh);
+      }
+      .detailsSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 10px;
+        .detailsWrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: -6px;
+          .detailsCard {
+            display: flex;
+            padding: 0px 12px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            align-self: stretch;
+            .cardTitle {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              color: #20365b;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.3px;
+            }
+            .cardBody {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 10px;
+              .cardContaint {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                align-self: stretch;
+                .cardContaintDetails {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 6px;
+                  .title {
+                    color: #404040;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                  }
+                }
+                .name {
+                  color: #000;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 24px;
+                }
+              }
+            }
+          }
+          .otherInformation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .detailsCard {
+              display: flex;
+              padding: 12px;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 10px;
+              align-self: stretch;
+              .title {
+                display: flex;
+                width: 179px;
+                height: 23px;
+                flex-direction: column;
+                justify-content: center;
+              }
+              .cardBody {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                .cardContaint {
+                  display: flex;
+                  width: 404px;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  .cardContaintDetails {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 6px;
+                    .title {
+                      color: #404040;
+                      font-size: 14px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 20px;
+                    }
+                    .name {
+                      color: #000;
+                      font-size: 14px;
+                      font-style: normal;
+                      font-weight: 700;
+                      line-height: normal;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .notificationWrapper {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          .icon {
+            width: 24px;
+            height: 24px;
+          }
+          .text {
+            color: #000;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.usernameInner {
+  display: flex;
+  width: 404px;
+  justify-content: space-between;
+  align-items: flex-start;
+  & > div {
+    width: 179px;
+  }
+}
+.errorText {
+  color: red;
+  font-size: 10px;
+}

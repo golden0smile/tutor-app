@@ -1,0 +1,80 @@
+.uniqueButton {
+  background-color: #0010350a;
+  border: none;
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1600px) {
+    height: 32px;
+    padding: 0 10px;
+  }
+}
+.calendarMainDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  width: fit-content;
+}
+.calendarOuterDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.calendarImg {
+  border-radius: 4px;
+  background-color: #20365b;
+  padding: 12px;
+  margin-right: 12px;
+  width: 48px;
+  @media (max-width: 1600px) {
+    padding: 7px;
+    width: 30px;
+  }
+}
+
+.view_type_wrap {
+  border: 1px solid #6e6c6c;
+  box-sizing: content-box;
+  border-radius: 50px;
+  color: #666666;
+  font-weight: 500;
+  width: max-content;
+  overflow: hidden;
+  cursor: pointer;
+
+  // min-width:50px;
+}
+
+.view_type_wrap div:not(:last-child) {
+  border-right: 1px solid;
+  border-color: #d5dce1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.green_select {
+  background-color: #20365b;
+  color: #fff;
+  font-weight: 600;
+  min-width: 50px;
+  align-items: center;
+  justify-content: center;
+  min-height: 15px;
+  font-size: 12px;
+}
+.p4 {
+  padding: 5px;
+  font-size: 12px;
+  min-width: 50px;
+  align-items: center;
+  justify-content: center;
+  min-height: 15px;
+}

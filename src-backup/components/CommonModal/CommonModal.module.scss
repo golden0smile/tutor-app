@@ -1,0 +1,21 @@
+@import "../../modules/session/utils/Color.scss";
+.modalTitle {
+  color: var(--Black, #001035);
+  color: #252525;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  @media (max-width: 1600px) {
+    font-size: 20px;
+  }
+}
+.modalContainer {
+  min-width: 666px;
+}
+
+.btn {
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 16px;
+}

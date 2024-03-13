@@ -1,0 +1,53 @@
+.header {
+  // width: 1130px;
+  // height: 92px;
+  // background-color: #f2f8fd;
+  background-color: white;
+  color: #e5e7eb;
+}
+
+.companyLogo {
+  width: 100px;
+}
+
+.userName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+.reportIcon {
+  color: #000000;
+  font-size: 32px;
+  text-align: end;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.currentTime {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+.info {
+  // margin-left: 20px;
+  position: relative;
+  padding: 0;
+  .badgeIcon {
+    font-size: 10px;
+    position: absolute;
+    top: 3px;
+    left: 25px;
+    border: 1px solid white;
+    background: #ff0000;
+    border-radius: 50%;
+    color: white;
+    z-index: 999;
+    cursor: pointer;
+    height: 40%;
+    width: 35%;
+    text-align: center;
+    padding: 1px;
+  }
+}

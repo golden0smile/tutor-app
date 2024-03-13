@@ -1,0 +1,30 @@
+$color_1: #050506;
+$color_2: #ffffff;
+$color_3: #fff;
+$background-color_1: transparent;
+$background-color_2: #ffffff;
+$background-color_3: #a5adb7;
+
+.btn {
+  text-align: center;
+  min-width: 100px !important;
+  padding: 5px 15px;
+  border: 0;
+  background-color: $background-color_1;
+  color: $color_1;
+  outline: none;
+  font-size: 12px;
+  background-color: $background-color_2;
+  &:disabled {
+    background-color: $background-color_3;
+  }
+}
+.btn-selected {
+  color: $color_2;
+  svg {
+    color: $color_3;
+  }
+}
+.margin_top_30 {
+  margin-top: 30px;
+}

@@ -1,0 +1,436 @@
+@import "../utils/Color.scss";
+
+.sessionCardMainContainer {
+  display: flex;
+  flex-direction: row !important;
+  margin-top: 15px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.sessionCardList {
+  display: flex;
+  flex-direction: row !important;
+  width: 100%;
+  height: calc(73vh - 49px);
+  background-color: $white;
+  overflow: auto;
+}
+
+.sessionCardItem {
+  background-color: #fff;
+  // min-width: 198px;
+  min-width: 17vw;
+  padding: 6px;
+  margin-right: 5px;
+  border-right: 1px solid #e0e2e7;
+  // cursor: pointer;
+  width: 100%;
+  max-width: 20%;
+  overflow: auto;
+}
+
+.advSessionCardItem {
+  @extend .sessionCardItem;
+  overflow: hidden;
+}
+
+.sessionCardItemUser {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: $ash;
+  @media (max-width: 1400px) {
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    align-self: center;
+    border-radius: 50%;
+  }
+  label {
+    align-self: center;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 10px;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+#usernameOverFlowStyle {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 125px;
+  @media (max-width: 1400px) {
+    font-size: 16px;
+  }
+}
+#usernameOverFlowStyle1 {
+  @extend #usernameOverFlowStyle;
+  width: 50px;
+}
+
+.user_v {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sessionCardItemAttendedStatus {
+  display: flex;
+  padding: 3px;
+  background-color: #65a30d;
+  color: $white;
+  align-items: center;
+  border-radius: 5px;
+  label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+.sessionCardItemMissedStatus {
+  @extend .sessionCardItemAttendedStatus;
+  padding: 4px 8px;
+  background-color: #e11d48;
+  letter-spacing: 1px;
+}
+
+.sessionCardItemCoinDur {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  background-color: $ash;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: $ash;
+  @media (max-width: 1400px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    @media (max-width: 1600px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media (max-width: 1400px) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  label {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-right: 10px;
+    @media (max-width: 1600px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.sessionCardItemPara {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: $ash;
+  height: 50px;
+  @media (max-width: 1400px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  p {
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @media (max-width: 1600px) {
+      font-size: 13px;
+      line-height: 18px;
+    }
+    @media (max-width: 1400px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.subjectCard {
+  height: 10px !important;
+}
+
+.sessionCardItemStatus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2px;
+  margin-top: 18px;
+  @media (max-width: 1600px) {
+    margin-top: 10px;
+  }
+  label {
+    font-size: 15px;
+
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+    @media (max-width: 1400px) {
+      font-size: 10px;
+    }
+  }
+  img {
+    height: 16px;
+    width: 17px;
+    object-fit: contain;
+    @media (max-width: 1600px) {
+      height: 14px;
+      width: 14px;
+    }
+    @media (max-width: 1400px) {
+      height: 12px;
+      width: 12px;
+    }
+  }
+}
+
+.sessionCardItemStatus1 {
+  label {
+    font-size: 10px;
+  }
+}
+
+.sessionCardDetails {
+  width: 62vw;
+  overflow: hidden;
+  padding: 10px;
+  margin-inline: 20px;
+}
+
+.partiallyCompleted {
+  color: var(--Dark, #666e82);
+  font-size: 10px;
+}
+
+.fullyCompleted {
+  @extend .partiallyCompleted;
+  color: $green;
+}
+
+.notCompleted {
+  @extend .partiallyCompleted;
+  color: $red;
+}
+
+.sessionCardDetailsHeader {
+  display: flex;
+  border-top: 3px solid $yellow;
+  border-radius: 5px;
+  flex-direction: column;
+  margin-block: 10px;
+  background-color: $ash;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sessionCardItemButtonContainer {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1px;
+  border-bottom: 1px solid #e7ebee;
+}
+
+.sessionCardItemActivityCardSection {
+  display: inline-block;
+  flex-direction: column;
+  padding-top: 10px;
+  // max-height: calc(100% - 220px);
+  flex: 1;
+  overflow: auto;
+  padding-bottom: 2px;
+}
+.sessionCardItemActivityCardSectionNoScroll {
+  @extend .sessionCardItemActivityCardSection;
+  max-height: 20vh;
+}
+
+:-webkit-scrollbar {
+  display: none;
+}
+.sessionDetailsActivityCardMainContainer {
+  display: flex;
+  min-width: 17vw;
+  background-color: $ash;
+  flex-direction: column;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.sessionDetailsActivityCardTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block: 8px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid $lightGrey;
+
+  img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+}
+
+.sessionDetailsActivityCardTitleSec {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  span {
+    font-size: 10px;
+  }
+}
+
+.sessionDetailsActivityCardActCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sessionDetailsActivityCardActContItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 8px;
+  img {
+    height: 15px;
+    width: 15px;
+    margin-right: 1px;
+  }
+  label {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+}
+
+.sessionDetailsActivityCardQuestionSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sessionDetailsActivityCardQuestionSectionItem {
+  display: flex;
+  border-radius: 80px;
+  height: 20px;
+  width: 30px;
+  background-color: $grey2;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  label {
+    color: $white;
+    font-size: 10px;
+  }
+  img {
+    width: 10px;
+    height: 10px;
+  }
+}
+.activityCardManualMarkStatus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: $blue3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  label {
+    font-size: 10px;
+  }
+  img {
+    height: 15px;
+    width: 15px;
+  }
+}
+.sessionDetailsCardItemSessionNameDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sessionDetailsCardItemSessionNameDetailsSection1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.sessionDetailsCardItemSessionNameDetailsSection1 label {
+  font-size: 10px;
+  font-weight: bold;
+  overflow: hidden;
+  min-width: 70%;
+  overflow-wrap: anywhere;
+}
+.sessionDetailsCardItemSessionNameDetailsSection1 p {
+  font-size: 8px;
+  margin-bottom: 0px;
+}
+.sessionDetailsCardItemSessionNameDetailsSection1 span {
+  font-size: 10px;
+}
+.sessionDetailsCardItemSessionNameDetailsSection2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.sessionDetailsCardItemSessionNameDetailsSection2 p {
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+.sessionDetailsCardItemSessionNameDetailsSection2 span {
+  font-size: 10px;
+}
+#titleSection {
+  font-size: 12px;
+  font-weight: bold;
+}

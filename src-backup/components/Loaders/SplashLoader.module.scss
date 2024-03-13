@@ -1,0 +1,40 @@
+$font-family_1: Open Sans;
+$font-family_2: Inter;
+
+.splash {
+  display: flex;
+  width: 100%;
+  /* padding: 245px 571px 278px 571px; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.centerImg {
+  width: 300px;
+}
+
+.p20 {
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+  span {
+    color: #234094;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p {
+    color: #252525;
+    text-align: center;
+    font-family: $font-family_2;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+  }
+}

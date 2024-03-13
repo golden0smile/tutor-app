@@ -1,0 +1,50 @@
+:root {
+  --lightGrayColor: #a5b2bd;
+  --borderColor: #e9e6e6;
+  --boxShadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+$color_1: #2a3042;
+$color_2: #20365b;
+$color_3: grey;
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  span {
+    cursor: pointer;
+    color: $color_1;
+    font-size: 14px;
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+  span.active {
+    color: $color_2;
+
+    font-weight: 800;
+  }
+  span.dir_icon {
+    svg {
+      color: $color_1;
+      font-size: 15px;
+      font-weight: 600;
+      stroke-width: 5em;
+    }
+  }
+  span.dir_icon.disable {
+    svg {
+      color: $color_3 !important;
+      cursor: default;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .wrap {
+    justify-content: center;
+    margin-top: 20px;
+    span {
+      font-size: 11px;
+    }
+  }
+}

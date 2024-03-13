@@ -1,0 +1,82 @@
+.main_container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  border: 1px solid #898c96;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.fs_14 {
+  font-size: 14px;
+}
+.fs_12 {
+  font-size: 12px;
+}
+
+.fs_24 {
+  font-size: 24px;
+}
+
+.detail_container {
+  padding: 5% 10% 5% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.optionContent {
+  padding: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+}
+.heading {
+  color: #252525;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.inputClass {
+  color: var(--black-60, rgba(0, 16, 53, 0.6));
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings:
+    "ss04" on,
+    "clig" off,
+    "liga" off;
+  /* Body/Default */
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.mainLabel {
+  color: #252525;
+  /* text-align: center; */
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.btnDiv {
+  margin-bottom: 10% !important;
+}
+
+.photo_title {
+  color: #252525;
+  text-align: center;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}

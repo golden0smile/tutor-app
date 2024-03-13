@@ -1,0 +1,40 @@
+$color_1: white;
+$primary_color: #234094;
+$color_2: #df5d51;
+
+.btn {
+  margin: 5px;
+  border-radius: 2px;
+  align-items: center;
+  gap: 5px;
+  background: $color_1;
+  color: $primary_color;
+  &:active {
+    background: $primary_color;
+    color: $color_1;
+  }
+  &:hover {
+    background: $primary_color;
+    color: $color_1;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+  &:disabled {
+    opacity: 0.65 !important;
+  }
+}
+
+/* warning button */
+.warningBtn {
+  color: white;
+  border-color: transparent;
+  background-color: $color_2 !important;
+}
+
+.warningBtn:enabled:hover {
+  box-shadow: none !important;
+  background-color: white !important;
+  color: $color_2 !important;
+  border: 1px solid $color_2;
+}

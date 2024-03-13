@@ -1,0 +1,231 @@
+//
+// Datepicker
+//
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans:wght@500&display=swap");
+
+[dir="rtl"] {
+  .datepicker {
+    right: 0 !important;
+    left: auto;
+  }
+}
+.react-bootstrap-table {
+  width: 100%;
+}
+.main_table {
+  table {
+    text-align: center;
+    background: #7f7f7f;
+    box-shadow: none;
+    border-radius: 8px !important;
+    margin-bottom: 0;
+    overflow: hidden;
+    thead {
+      gap: 12px;
+      background-color: white;
+      border: none;
+      border-radius: 50%;
+      // display: flex;
+      // flex-direction: row;
+      // align-items: center;
+      // justify-content: space-between;
+      padding: 10px;
+      border-bottom: 12px solid #f2f8fd;
+
+      tr {
+        width: 100%;
+        margin-bottom: 30% !important;
+        th {
+          font-size: 15px;
+          background: white;
+          color: #2d2d2d;
+          font-weight: 700;
+          padding: 15px 10px;
+          text-transform: capitalize;
+          box-shadow: none !important;
+          outline: none !important;
+        }
+      }
+    }
+    tbody {
+      margin-top: 20px;
+      font-size: 12px;
+      border-left: none;
+    }
+  }
+}
+.datePickerRenewal {
+  height: 40px;
+
+  .react-date-picker__wrapper {
+    border: 0px;
+  }
+}
+.searchRenewal {
+  height: 48px;
+  @media (max-width: 1600px) {
+    height: 38px;
+  }
+}
+.searchBox {
+  input {
+    width: 50%;
+    margin-top: 1px;
+    font-size: 14px;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding: 0px 40px;
+    padding-right: 10px;
+    line-height: 48px;
+    height: 48px;
+    border: 1.5px solid #e7e7e7;
+    @media (max-width: 1600px) {
+      line-height: 38px;
+      height: 38px;
+    }
+    :focus-visible {
+      border: 1px solid #999fae !important;
+    }
+  }
+  input::placeholder {
+    color: rgba(
+      0,
+      16,
+      53,
+      0.6
+    ) !important; /* Replace with your desired color */
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  i {
+    font-size: 16px;
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    line-height: 27px;
+    transform: translateY(-50%);
+    color: #a1a1a1;
+    @media (max-width: 1600px) {
+      font-size: 14px;
+      top: 53%;
+      line-height: 27px;
+    }
+  }
+}
+
+.datePickerInput {
+  margin-bottom: 3px;
+  min-height: 38px;
+  background-color: white !important;
+  height: 36px;
+  width: 325px;
+  margin-top: 1px;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 0px 20px;
+  padding-left: 10px;
+  display: flex;
+  line-height: 36px;
+  justify-content: space-between;
+  padding-right: 10px;
+  border: 1px solid var(--black-40, rgba(0, 16, 53, 0.4));
+  :focus-visible {
+    border: 1px solid #999fae !important;
+  }
+  .placeHolder {
+    color: rgba(
+      0,
+      16,
+      53,
+      0.6
+    ) !important; /* Replace with your desired color */
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    @media (max-width: 1600px) {
+      font-size: 13px;
+    }
+  }
+  i {
+    color: #001035 !important;
+    font-size: 16px;
+    position: relative;
+    left: 100%;
+    top: -33px;
+    font-weight: 600;
+  }
+}
+
+.page_count {
+  font-size: 15px !important;
+  color: #666666;
+}
+
+.font_small12 {
+  font-size: 12px;
+}
+.footer {
+  gap: 2px;
+  margin-top: 0;
+  padding: 26px 1rem 0;
+  background-color: #fff;
+}
+.filters {
+  label {
+    color: black;
+    font-size: 14px;
+    margin-left: 2px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    @media (max-width: 1600px) {
+      font-size: 13px;
+    }
+  }
+}
+.buttonFilter {
+  display: flex;
+  justify-content: space-between;
+}
+.clearFilterBtn {
+  background-color: #234094 !important;
+  color: white !important;
+  border-radius: 5px !important;
+  border: 1px solid white !important;
+  padding: 5px 10px !important;
+}
+.noDataMsg {
+  display: flex;
+  justify-content: center;
+  font-size: 14px !important;
+}
+.unPlanLesson {
+  display: flex;
+  align-items: center;
+  label {
+    margin-left: 5px;
+    margin-bottom: 0;
+  }
+}
+table * {
+  font-size: 15px !important;
+  color: var(--Black, #001035);
+  text-align: left;
+  vertical-align: middle;
+  word-break: break-word;
+  @media (max-width: 1600px) {
+    font-size: 13px !important;
+  }
+  @media (max-width: 1400px) {
+    font-size: 12px !important;
+  }
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  text-align: left;
+}

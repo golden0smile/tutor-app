@@ -1,0 +1,88 @@
+@import "../utils/Color.scss";
+.sort_table_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img {
+    height: 20px;
+    width: 20px;
+  }
+}
+.sort_table_btn_green {
+  border: 1px solid $green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 30px;
+  margin-right: 10px;
+
+  label {
+    color: $green;
+    font-size: 12px;
+  }
+}
+.sort_table_btn_red {
+  border: 1px solid $red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 30px;
+  margin-right: 10px;
+  label {
+    color: $red;
+    font-size: 12px;
+  }
+}
+.tableContent {
+  display: flex;
+  width: 100%;
+  font-size: 10px;
+  overflow: auto;
+  table {
+    min-width: 880px;
+    // tr th{
+    //   min-width: 100px;
+    // }
+  }
+}
+.tableContent1 {
+  @extend .tableContent;
+  overflow: hidden;
+  table {
+    min-width: 100%;
+    th .sortable {
+      padding: 3px;
+    }
+  }
+}
+.tBTn_a0 {
+  color: #20365b !important;
+  background-color: #e5e7eb !important;
+}
+
+.tBTn_a2 {
+  color: white !important;
+  background-color: #65a30d !important;
+}
+.tBTn_a1 {
+  color: white !important;
+  background-color: #ea580c !important;
+}
+.tBTn_a3 {
+  color: white !important;
+  background-color: red !important;
+}
+.tBTn_a4 {
+  color: black !important;
+  background-color: white !important;
+  border: 1px solid black !important;
+}
+.tBTn_a5 {
+  color: black !important;
+  background-color: white !important;
+  border: 1px solid black !important;
+  // padding-left: 10px !important;
+  // padding-right: 10px !important;
+}

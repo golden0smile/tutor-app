@@ -1,0 +1,33 @@
+$backGroundColor: #e5e7eb;
+$boarderColor: #c4c4c4;
+
+.mainDiv {
+  cursor: pointer;
+  background-color: $backGroundColor !important;
+  border-bottom: 1px solid rgba(0, 16, 53, 0.12);
+  padding: 0;
+}
+
+.collapse {
+  // "d-flex justify-content-between align-items-center"
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  span {
+    text-transform: capitalize;
+    color: var(--Black, #001035);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    @media (max-width: 1600px) {
+      font-size: 14px;
+    }
+    @media (max-width: 1400px) {
+      font-size: 12px;
+    }
+  }
+  .myCard {
+    border-radius: 0px !important;
+  }
+}

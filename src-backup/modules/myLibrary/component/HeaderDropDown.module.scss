@@ -1,0 +1,41 @@
+$primary_color: #234094;
+
+.downArrow::after {
+  cursor: pointer;
+  appearance: none;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+  border-bottom: 0 !important;
+  content: "" !important;
+  width: 16px !important;
+  height: 12px !important;
+  display: none;
+}
+.dropArrow::after {
+  cursor: pointer;
+  appearance: none;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+  border-bottom: 0 !important;
+  content: "" !important;
+  width: 16px !important;
+  height: 12px !important;
+  background: url(../../../assets/images/downArrow.svg) no-repeat !important;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.dropMenu {
+  transform: translate(0px, 36px) !important;
+  border-radius: 0 !important;
+  --bs-dropdown-min-width: none !important;
+}
+.dropDownItem {
+  font-size: 14px;
+  &:hover {
+    background-color: gray !important;
+    color: white !important;
+  }
+}

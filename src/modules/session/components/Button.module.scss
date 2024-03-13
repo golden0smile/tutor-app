@@ -1,0 +1,49 @@
+@import "../utils/Color.scss";
+.sessionCardDetailsButton {
+  background-color: $btn-pink;
+  padding: 3px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  label {
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 8px;
+    @media (max-width: 1600px) {
+      font-size: 13px;
+      padding: 5px;
+    }
+    @media (max-width: 1400px) {
+      font-size: 12px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 8px;
+    }
+  }
+}
+.sessionCardDetailsButtonOutline {
+  background-color: #fff;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px solid #4d4d4d;
+  border-radius: 5px;
+  color: var(--Grey-5, #263238);
+  font-size: 15px;
+  font-weight: 700;
+  label {
+    font-size: 12px;
+    cursor: pointer;
+    color: $grey;
+  }
+}

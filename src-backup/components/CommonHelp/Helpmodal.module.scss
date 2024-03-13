@@ -1,0 +1,65 @@
+.pTag {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.modal {
+  width: 300px;
+  height: 300px;
+}
+
+.button {
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #d83d59;
+  height: 35px;
+}
+
+.helpImage {
+  background-color: #234094;
+  padding: 3px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+}
+
+.textarea {
+  resize: none;
+}
+
+input::placeholder {
+  font-size: 12px;
+  color: #999;
+}
+
+textarea::placeholder {
+  font-size: 12px;
+  color: #999;
+}
+
+.helpTitle {
+  font-size: 16px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  .label {
+    font-size: 14px;
+  }
+  .input {
+    border: 1px solid #00103566;
+    padding: 0 10px;
+  }
+}

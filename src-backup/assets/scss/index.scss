@@ -1,0 +1,379 @@
+@import "react-big-calendar/lib/sass/styles";
+@import "react-big-calendar/lib/addons/dragAndDrop/styles"; // if using DnD
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+body {
+  background-color: #f2f8fd;
+  font-family: "Nunito", sans-serif;
+}
+.date-picker-wrapper {
+  .rdrCalendarWrapper {
+    width: 325px;
+    // z-index: 9999;
+  }
+}
+
+.removeTimeSlot {
+  .rbc-time-slot {
+    flex: 1 0;
+    display: none !important;
+    border: none;
+  }
+}
+
+.rbc-calendar {
+  height: auto !important;
+}
+.rbc-event.rbc-selected,
+.rbc-day-slot .rbc-selected.rbc-background-event {
+  background-color: transparent !important;
+}
+.rbc-event:focus,
+.rbc-day-slot .rbc-background-event:focus {
+  outline: none !important;
+}
+.removeTimeSlot {
+  .no-events {
+    // span{
+    //   color: black;
+    //   font-size: 15px;
+    // }
+  }
+  .no-events-message {
+    color: #cb0000; /* Change the text color as needed */
+    font-size: 14px; /* Adjust the font size as needed */
+    /* Add any other styles you want for the message */
+  }
+}
+.rbc-time-view .rbc-row {
+  // margin-top: 20px !important;
+  min-height: 35px !important;
+}
+.rbc-row {
+  border-bottom: none;
+}
+.removeTimeSlotLabel {
+  .rbc-label {
+    display: none !important;
+  }
+}
+
+table th span.sort-arrows {
+  line-height: 0.7;
+  position: relative;
+  top: -2px;
+}
+
+.removeTimeSlot {
+  .rbc-time-column .rbc-timeslot-group {
+    display: none;
+  }
+}
+
+.removeTimeSlot {
+  .rbc-header {
+    // overflow: hidden;
+    flex: 1 0;
+    //text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 800;
+    font-size: 15px;
+    min-height: 0;
+    border-bottom: none;
+    color: gray;
+    border: none;
+  }
+}
+
+.removeTimeSlot {
+  .rbc-time-content {
+    flex: none;
+    border: none;
+    display: none;
+  }
+}
+
+.removeTimeSlot {
+  .rbc-event {
+    background-color: white;
+    padding: 0 10px !important;
+    @media (max-width: 1399px) {
+      padding: 0 5px !important;
+    }
+  }
+}
+
+.removeTimeSlot .rbc-time-header-cell .rbc-button-link {
+  margin-bottom: 14px;
+  color: #001035;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.removeTimeSlot .rbc-time-view {
+  background-color: white;
+}
+
+.removeTimeSlot .rbc-time-header-cell .rbc-today {
+  border-top: 4px solid #d83d59;
+}
+
+.removeTimeSlot {
+  .rbc-today {
+    background-color: white;
+  }
+}
+
+.removeTimeSlot {
+  .rbc-time-header-content {
+    flex: 1 1;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    border-left: 0px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.removeTimeSlot {
+  .rbc-button-link {
+    color: inherit;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    user-select: text;
+    margin-bottom: 14px;
+  }
+}
+
+.removeTimeSlot {
+  .rbc-toolbar {
+    display: none;
+  }
+}
+
+.removeTimeSlot {
+  .rbc-time-header-content {
+    flex: 1 1;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    border-left: 0px solid #ddd;
+    // border-bottom: 1px solid #ddd;
+    border-bottom: 0 !important;
+  }
+}
+
+.pickerOverlayA {
+  .rdrDateDisplayWrapper {
+    display: none !important;
+  }
+}
+
+.pickerOverlayA {
+  .rdrInputRanges {
+    display: none !important;
+  }
+}
+
+.pickerOverlayA {
+  .rdrDefinedRangesWrapper {
+    display: none !important;
+  }
+}
+
+.modal-header {
+  .btn-close {
+    font-size: 14px;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.rbc-row-bg {
+  .no-events-wrapper {
+    position: relative;
+    &::after {
+      content: "No sessions scheduled";
+      position: absolute;
+      font-size: 12px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      width: 100%;
+      text-align: center;
+      padding: 0 10px;
+      box-sizing: border-box;
+      margin: 0;
+    }
+  }
+}
+.rbc-time-header {
+  min-height: 230px;
+}
+.removeTimeSlot .rbc-time-view {
+  border-radius: 4px;
+}
+
+.react-bootstrap-table {
+  overflow: auto;
+  table {
+    min-width: 1100px;
+  }
+}
+
+.noData {
+  .react-bootstrap-table {
+    table {
+      min-width: 100%;
+      overflow: hidden;
+    }
+  }
+  .react-bootstrap-table th.sortable:nth-child(3) {
+    width: 110px;
+    padding: 3px;
+  }
+  .react-bootstrap-table th.sortable:not(:nth-child(3)) {
+    width: 80px;
+  }
+}
+
+.rdrDayPassive span.rdrDayNumber span {
+  color: #acbbdd !important;
+}
+.table > :not(caption) > * > * {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.table button {
+  font-size: 12px !important;
+  padding: 10px !important;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  min-width: auto !important;
+  line-height: 1;
+  @media (max-width: 1600px) {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 1399px) {
+  .rbc-header {
+    padding-left: 5px !important;
+  }
+}
+
+.rbc-time-view {
+  overflow: auto;
+}
+
+.rbc-time-header {
+  overflow-x: auto;
+  display: table;
+  width: 100%;
+  min-width: 1080px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2f8fd;
+  border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1f9bd7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #234094;
+}
+
+.customDropDown {
+  .dropdown {
+    // width: 10px;
+    // background-color: #1f9bd7;
+    button {
+      background-color: rgb(250, 251, 253);
+      border: 0;
+      padding: 0px;
+      margin-left: 3px;
+      // width: 10px;
+      img {
+        height: 15px;
+        margin-right: 6px;
+        object-fit: contain;
+        // width: 15px;
+        // padding-left: 10px;
+      }
+      label {
+        color: rgb(77, 77, 77);
+        cursor: pointer;
+        font-size: 10px;
+        // margin-bottom: 0px;
+      }
+      // &:hover{
+      //   background-color: #dae7f2;
+      // }
+      &:active {
+        background: transparent;
+        border: 0;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+  }
+}
+
+.dayView {
+  .rbc-toolbar {
+    display: none !important;
+  }
+  .rbc-time-header {
+    display: none !important;
+  }
+  .rbc-allday-cell {
+    display: none !important;
+  }
+  .rbc-event-label {
+    display: none;
+  }
+  .rbc-event {
+    background: transparent;
+    border: none !important;
+    transition: all 4s;
+    &:hover {
+      height: auto !important;
+    }
+  }
+  .rbc-current-time-indicator {
+    display: none;
+  }
+  .rbc-time-column .rbc-timeslot-group {
+    min-height: 100px;
+  }
+  .no-events-wrapper {
+    display: flex;
+  }
+}

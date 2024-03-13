@@ -1,0 +1,942 @@
+@import "../../utils/Color.scss";
+.modalStudentMainContainer {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  // align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.modalStudentContainer {
+  display: flex;
+  height: 100vh;
+  overflow: auto;
+  background-color: #f0f3fb;
+  width: 100%;
+  right: 0;
+  flex-direction: column;
+  max-width: 570px;
+  @media (max-width: 1600px) {
+    max-width: 425px;
+  }
+}
+.modalStudentHeader {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: $white;
+  padding-top: 12px;
+  // padding-inline: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0px 1px 8px 0px rgba(72, 72, 72, 0.1);
+  padding-bottom: 12px;
+}
+.modalStudentHeaderIcon {
+  display: flex;
+  margin-right: 10px;
+  justify-content: flex-start;
+  img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    @media (max-width: 1600px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+.modalStudentHeaderName {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#name {
+  color: var(--Black, #001035);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  @media (max-width: 1600px) {
+    font-size: 22px;
+  }
+}
+#level {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  @media (max-width: 1600px) {
+    font-size: 15px;
+  }
+}
+#level2 {
+  color: var(--Black, #001035);
+  font-size: 12px;
+}
+.modalStudentHeaderClose {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+}
+.modalStudentHeaderSectionContent {
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+  // justify-content: space-between;
+  // padding-block: 15px;
+  // padding-inline: 12px;
+  padding: 15px 12px;
+  background: #f9fafc;
+  select {
+    font-size: 12px;
+    padding: 3px;
+    border: 1px solid $lightGrey;
+    outline: none;
+    background-color: transparent;
+    color: $grey5;
+  }
+  // label {
+  //   font-size: 12px;
+  //   margin-bottom: 5px;
+  // }
+}
+#label1 {
+  margin-bottom: 12px;
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+#label2 {
+  margin-top: 5px;
+  color: $red;
+  font-size: 12px;
+  font-weight: 700;
+}
+#label0 {
+  margin-top: 5px;
+  color: $green1;
+  font-size: 12px;
+  font-weight: 700;
+}
+.modalStudentHeaderSectionContentDetails1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.modalStudentHeaderSectionContentDetails1Item1 {
+  background-color: $grey2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 10px;
+  padding: 4px;
+  border-radius: 4px;
+  label {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    @media (max-width: 1400px) {
+      font-size: 14px;
+    }
+    &:last-child {
+      font-weight: 400;
+    }
+  }
+}
+.modalStudentHeaderSectionContentDetails1Item2 {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    @media (max-width: 1600px) {
+      font-size: 13px;
+    }
+    &:first-child {
+      font-size: 15px;
+      font-weight: 400;
+      @media (max-width: 1600px) {
+        font-size: 13px;
+      }
+    }
+    &:nth-child(3) {
+      color: var(--Dark, #666e82);
+      font-size: 12px;
+    }
+  }
+}
+.modalStudentHeaderSectionContent1 {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $white;
+  label {
+    color: var(--Black, #001035);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    @media (max-width: 1600px) {
+      font-size: 15px;
+    }
+  }
+  img {
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+  }
+}
+.modalStudentSubHeaderSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  background: var(--parent-secondary, #f2f8fd);
+  @media (max-width: 1600px) {
+    padding: 10px;
+  }
+}
+.modelStudentSubHeaderItemSelected {
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  justify-content: center;
+  // padding-block: 10px;
+  padding: 10px 0px;
+  cursor: pointer;
+  background: var(--parent-primary, #20365b);
+  @media (max-width: 1400px) {
+    font-size: 14px;
+    // padding-block: 8px;
+    padding: 8px 0px;
+  }
+}
+.modelStudentSubHeaderItem {
+  // background-color: $blue;
+  // color: $white;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding-block: 7px;
+  padding: 7px 0px;
+  cursor: pointer;
+  // transition:1s;
+  @media (max-width: 1600px) {
+    font-size: 14px;
+  }
+}
+.modelStudentSubSectionNotesContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  label {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 5px;
+    @media (max-width: 1600px) {
+      font-size: 14px;
+    }
+  }
+  p {
+    font-size: 15px;
+    font-weight: 700;
+    @media (max-width: 1600px) {
+      font-size: 13px;
+    }
+  }
+  textarea {
+    font-size: 12px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    @media (max-width: 1600px) {
+      padding: 5px;
+    }
+  }
+}
+.modelStudentSubSectionNotesSection {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  // padding: 12px;
+}
+.modelStudentSubSectionNotesItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #efefef;
+}
+.modelStudentSubSectionNotesItem1 {
+  display: flex;
+  // flex:1;
+  flex-direction: column;
+  label {
+    font-size: 15px;
+    font-weight: 700;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+  }
+  span {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.4;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+  }
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.4;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+  }
+}
+.modelStudentSubSectionNotesItem2 {
+  display: flex;
+  max-width: 240px;
+  @media (max-width: 1600px) {
+    max-width: 180px;
+  }
+  p {
+    color: var(--Black, #001035);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+  }
+}
+.modelStudentDetailsReportSectionMainContainer {
+  display: flex;
+  background-color: $white;
+  padding: 10px;
+  flex-direction: column;
+  overflow: scroll;
+  padding-top: 15px;
+}
+.modelStudentDetailsReportSectionHeader1 {
+  display: flex;
+  label {
+    font-weight: bold;
+    font-size: 18px;
+    @media (max-width: 1600px) {
+      font-size: 14px;
+    }
+  }
+}
+.modelStudentDetailsReportSectionHeader2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.modelStudentDetailsReportSectionHeader2Item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  label {
+    font-size: 15px;
+    color: $lightGrey;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+  }
+  span {
+    font-weight: bold;
+    font-size: 15px;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+  }
+}
+.modelStudentDetailsReportSectionHeader3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 3px;
+    @media (max-width: 1600px) {
+      font-size: 14px;
+    }
+  }
+  img {
+    width: 16px;
+    object-fit: contain;
+  }
+}
+.modelStudentDetailsReportSectionStudentStatus {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: var(--parent-primary, #20365b);
+  label {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+  }
+  img {
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  span {
+    color: $green1;
+  }
+}
+.modelStudentDetailsReportSectionTopicsSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5px;
+  label {
+    color: #898c96;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    @media (max-width: 1600px) {
+      font-size: 13px;
+    }
+  }
+  span {
+    font-size: 15px;
+    font-weight: 700;
+    @media (max-width: 1600px) {
+      font-size: 13px;
+    }
+  }
+}
+.modelStudentDetailsReportSectionTopicsSection1 {
+  display: flex;
+  flex-direction: row;
+  // height:20px;
+  margin-top: 5px;
+}
+.modelStudentDetailsReportSectionTopicsDiagram1 {
+  display: flex;
+  // flex: 1;
+  height: 20px;
+  background-color: $green1;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.modelStudentDetailsReportSectionTopicsDiagram2 {
+  display: flex;
+  flex: 1;
+  height: 20px;
+  background-color: $yellow;
+}
+.modelStudentDetailsReportSectionTopicsDiagram3 {
+  display: flex;
+  flex: 1;
+  height: 20px;
+  background-color: $red;
+}
+.modelStudentDetailsReportSectionTopicsDiagram4 {
+  display: flex;
+  flex: 1;
+  height: 20px;
+  background-color: $lightGrey;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.modelStudentDetailsReportTopicsDiagramDesc {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  span {
+    align-self: center;
+    font-size: 12px;
+    font-weight: 400;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+    strong {
+      margin-right: 5px;
+      font-size: 15px;
+      font-weight: 700;
+      @media (max-width: 1600px) {
+        font-size: 12px;
+      }
+    }
+  }
+}
+#label01 {
+  margin-top: 1px;
+  align-self: center;
+  font-size: 12px;
+  color: $green1;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  @media (max-width: 1600px) {
+    font-size: 12px;
+  }
+}
+#label02 {
+  margin-top: 1px;
+  align-self: center;
+  font-size: 12px;
+  color: $yellow;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  @media (max-width: 1600px) {
+    font-size: 12px;
+  }
+}
+#label03 {
+  margin-top: 1px;
+  align-self: center;
+  font-size: 12px;
+  color: $red;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  @media (max-width: 1600px) {
+    font-size: 12px;
+  }
+}
+#label04 {
+  margin-top: 1px;
+  align-self: center;
+  font-size: 12px;
+  color: $lightGrey;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  @media (max-width: 1600px) {
+    font-size: 12px;
+  }
+}
+.modelStudentDetailsReportTopicsBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: $pink2;
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+  margin-top: 12px;
+  cursor: pointer;
+  label {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    margin-right: 4px;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+  }
+  img {
+    cursor: pointer;
+  }
+}
+.modelStudentDetailsReportPieChartSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    @media (max-width: 1600px) {
+      font-size: 15px;
+    }
+  }
+  span {
+    font-size: 15px;
+    margin-bottom: 5px;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+  }
+  p {
+    color: $lightGrey;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px; /* 100% */
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+  }
+}
+.modelStudentDetailsReportTopicSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  .title {
+    flex-wrap: wrap;
+    width: 70%;
+  }
+  img {
+    height: 15px;
+    width: 15px;
+  }
+}
+.reportListingMainContainer {
+  display: flex;
+  flex-direction: column;
+  background: #f9fafc;
+}
+.reportListingHeaderSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: var(--white, #fff);
+  box-shadow: 0px 1px 8px 0px rgba(72, 72, 72, 0.1);
+}
+.reportListingHeaderSection img {
+  height: 15px;
+  width: 15px;
+}
+.reportListingBackButton {
+  display: flex;
+  flex-direction: row;
+  align-items: row;
+}
+.reportListingBackButton label {
+  font-size: 12px;
+}
+.reportListingBackButton img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: var(--black-4, rgba(0, 16, 53, 0.04));
+  padding: 4px;
+}
+.reportListingFilterSection {
+  display: flex;
+  flex-direction: column;
+}
+.reportListingFilterSectionHead {
+  display: flex;
+  padding: 10px;
+}
+.reportListingFilterSectionHead label {
+  font-size: 12px;
+  font-weight: bold;
+}
+.reportListingFilterSectionContent {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  padding-top: 0;
+}
+.reportListingFilterSectionContent img {
+  height: 15px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.reportListingFilterSectionContent select {
+  border: 1px solid $grey;
+  border-radius: 2px;
+  background: var(--parent-primary, #20365b);
+  color: $white;
+  margin-right: 10px;
+  font-size: 12px;
+  padding: 3px;
+}
+.reportListingContent {
+  display: flex;
+  flex-direction: column;
+}
+.reportListingContentItem {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: $white;
+  border-bottom: 1px solid $grey3;
+}
+.reportListingContentItemSec1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 3px;
+  background-color: $white;
+  cursor: pointer;
+
+  label {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+    }
+    @media (max-width: 1400px) {
+      font-size: 12px;
+    }
+  }
+  span {
+    color: var(--parent-primary, #20365b);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    /* Parent/Body text bold */
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+    @media (max-width: 1400px) {
+      font-size: 12px;
+    }
+  }
+  p {
+    font-size: 8px;
+    margin-bottom: 0px;
+  }
+  img {
+    height: 15px;
+    width: 15px;
+  }
+}
+.reportListingContentItemSec2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 3px;
+  background-color: $white;
+  label {
+    color: var(--Inactive, #8d9fb6);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    margin-right: 10px;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+    @media (max-width: 1400px) {
+      font-size: 12px;
+    }
+  }
+  span {
+    color: var(--Grey-5, #263238);
+    text-align: right;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    /* Parent/Body text bold */
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+    @media (max-width: 1400px) {
+      font-size: 12px;
+    }
+  }
+  p {
+    color: var(--Grey-5, #263238);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0px;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+    @media (max-width: 1400px) {
+      font-size: 12px;
+    }
+  }
+  img {
+    height: 15px;
+    width: 15px;
+  }
+}
+.reportListingContentItemSecCont {
+  display: flex;
+  flex-direction: column;
+}
+#highScore {
+  color: var(--Accent-Green, var(--parent-maths, #009688));
+}
+#mediumScore {
+  color: $yellow;
+}
+#Failed {
+  color: $red;
+}
+#noScore {
+  color: $grey;
+}
+.reportDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.reportDetailsTitle1 {
+  font-size: 12px;
+  color: $grey;
+  margin-bottom: 2px;
+}
+.reportDetailsTitle2 {
+  font-size: 16px;
+  color: $black;
+  margin-bottom: 2px;
+}
+.reportDetailsTitle3 {
+  font-size: 12px;
+  color: $lightGrey;
+  margin-bottom: 2px;
+}
+.reportDetailsTitle4 {
+  font-size: 12px;
+  color: $black;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.reportDetailsTitle5 {
+  font-size: 12px;
+  color: $black;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+.reportDetailsGraphContainer {
+  display: flex;
+  border: 1px solid rgba(0, 16, 53, 0.1215686275);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 16px;
+  flex-direction: column;
+  margin: 15px 0 0;
+}
+.reportDetailsGraphHead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dot {
+  display: flex;
+  width: 3px;
+  height: 3px;
+  border-radius: 100px;
+  background-color: $grey;
+  margin-right: 3px;
+  margin-top: 3px;
+}
+.reportDetailsTitle1 li {
+  display: flex;
+  // align-items: center;
+  flex-direction: row;
+}
+.studentDetailsContactSectionMainContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.studentDetailsContactSectionContent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    @media (max-width: 1600px) {
+      font-size: 15px;
+    }
+  }
+}
+.studentDetailsContactSectionItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  label {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.8;
+    min-width: 150px;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+  }
+  span {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1.8;
+    @media (max-width: 1600px) {
+      font-size: 12px;
+    }
+  }
+}
+.loader {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 7.5px solid;
+  border-color: #dbdcef;
+  border-right-color: #223b93;
+  animation: spinner-d3wgkg 1.2s infinite linear;
+}
+@keyframes spinner-d3wgkg {
+  to {
+    transform: rotate(1turn);
+  }
+}

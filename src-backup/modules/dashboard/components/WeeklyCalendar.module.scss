@@ -1,0 +1,281 @@
+@import "react-big-calendar/lib/css/react-big-calendar.css";
+.container {
+  width: 1110px;
+  height: 488px;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 11px;
+}
+
+.myCalendar {
+  .rbc-time-view .rbc-row {
+    margin-top: 20px !important;
+  }
+}
+.dayView {
+  .rbc-toolbar {
+    display: none !important;
+  }
+  .rbc-time-header {
+    display: none !important;
+  }
+  .rbc-allday-cell {
+    display: none !important;
+  }
+  .rbc-event-label {
+    display: none;
+  }
+}
+
+.containerCalendar {
+  width: "810px";
+  margin: 5px;
+}
+.dateInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid var(--Default, #b2b7c2);
+  background: var(--White, #fff);
+  margin-bottom: 10px;
+
+  .inner {
+    padding: 5px;
+    padding-bottom: 0;
+  }
+}
+
+.leftSideButton {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #234094;
+  color: #ffffff;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.leftSideNoneHoverButton {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: white;
+  color: #7c7c7c;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.calendarNoneHoverButton {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: white;
+  color: #7c7c7c;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.leftArrowButton {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: white;
+  color: #7c7c7c;
+  margin-right: 5px;
+  margin-left: 7px;
+  font-size: 13px;
+}
+
+.pickerOverlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 999; /* Adjust z-index as needed to ensure it's on top */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pTime {
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: var(--Black, #001035);
+  @media (max-width: 1600px) {
+    font-size: 12px;
+  }
+}
+
+.sessionName {
+  font-size: 18px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  line-height: 24px;
+  @media (max-width: 1600px) {
+    font-size: 15px;
+  }
+}
+
+.pSubject {
+  font-size: 12px;
+  color: #666e82;
+  margin-bottom: 0px;
+}
+
+.lineHr {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  border-top: 1px solid black;
+  width: calc(100% + 10px);
+  margin-left: -5px;
+}
+
+.mainStudentName {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  // overflow:auto;
+  // height:100px;
+  .inner {
+    display: flex;
+    img {
+      margin-top: 1%;
+      margin-right: 3%;
+    }
+  }
+}
+
+.studentName {
+  font-size: 12px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.buttonWeeklyCalendar {
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 7px;
+  line-height: 25px;
+  border-radius: 0px 0px 4px 4px;
+  @media (max-width: 1600px) {
+    font-size: 13px;
+  }
+}
+.onGoing {
+  color: #7c4a00;
+  background: #ffe1b6; //ongoing
+}
+.completed {
+  color: #237b56;
+  background: #d9f6ed; //completed
+}
+.reAssigned {
+  color: black;
+  background: #dbdbdb; //reassigned
+}
+.upcoming {
+  color: white !important;
+  background-color: #5b51ff !important; //upcoming
+}
+
+.calendarIcon {
+  background-color: #234094;
+  width: 29px;
+  padding: 6px;
+}
+
+.today-cell {
+  border-top: 2px solid red;
+  background-color: transparent !important;
+}
+
+.calender_day_title {
+  display: flex;
+  align-items: center;
+}
+
+.calender_day_title span:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 5px;
+  line-height: normal;
+}
+
+.calender_day_title span:last-child {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.noActivity {
+  display: flex;
+  justify-content: center;
+  color: #e11d48;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+.otherSubject {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.moreLink {
+  color: #000 !important;
+  font-size: 12px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  // margin: 10px 0 0 10px;
+}
+.loader_bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+}
+.loader {
+  z-index: 999999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 7.5px solid;
+  border-color: #dbdcef;
+  border-right-color: #223b93;
+  animation: spinner-d3wgkg 1.2s infinite linear;
+}
+@keyframes spinner-d3wgkg {
+  to {
+    transform: rotate(1turn);
+  }
+}

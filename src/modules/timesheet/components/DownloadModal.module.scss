@@ -1,0 +1,98 @@
+@import "../utils/Color.scss";
+.modal_main_container {
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.25);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.modal_container {
+  padding: 30px;
+  background-color: $white;
+  width: 50vw;
+  max-height: 90vh;
+  opacity: 10;
+  overflow: scroll;
+}
+.modal_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $lightGrey;
+  margin-bottom: 30px;
+  label {
+    font-weight: bold;
+  }
+  img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+}
+.modal_body {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 12px;
+  }
+}
+.modal_container_item {
+  max-height: 100vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  label {
+    font-size: 12px;
+  }
+}
+.modal_input {
+  border: 1px solid $lightGrey;
+  padding: 3px;
+  font-size: 12px;
+  background-color: $white;
+  span {
+    color: $lightGrey;
+  }
+}
+.modal_input:focus {
+  border: 1px solid $lightGrey;
+  outline: none !important;
+}
+.modal_input_icon {
+  position: absolute;
+  display: flex;
+  right: 0;
+}
+.modal_button {
+  display: flex;
+  justify-content: center;
+  button {
+    background-color: $blue;
+    // padding-inline: 25px;
+    // padding-block: 8px;
+    padding: 8px 25px;
+    font-size: 12px;
+    color: $white;
+  }
+}
+.modal_container_tick_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: 45vw;
+  img {
+    height: 20vh;
+    width: 30vw;
+    object-fit: cover;
+  }
+}

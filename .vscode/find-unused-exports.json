@@ -1,0 +1,24 @@
+{
+  "ignore": {
+    "files": [
+      "/Users/differenz42/Desktop/tutor-app/src/constants/apiUrls.js",
+      "/Users/differenz42/Desktop/tutor-app/src/constants/customReactSelectStyles.js",
+      "/Users/differenz42/Desktop/tutor-app/src/constants/images.js",
+      "/Users/differenz42/Desktop/tutor-app/src/constants/messages.js",
+      "/Users/differenz42/Desktop/tutor-app/src/layout/Header.jsx",
+      "/Users/differenz42/Desktop/tutor-app/src/modules/dashboard/components/MyTodaySchedule.jsx",
+      "/Users/differenz42/Desktop/tutor-app/src/modules/myLibrary/features/myLibrarySlice.js",
+      "/Users/differenz42/Desktop/tutor-app/src/modules/myLibrary/indexCopy.jsx",
+      "/Users/differenz42/Desktop/tutor-app/src/modules/myLibrary/utils/getDurationName.js",
+      "/Users/differenz42/Desktop/tutor-app/src/modules/dashboard/features/homeSlice.js",
+      "/Users/differenz42/Desktop/tutor-app/src/modules/login/features/loginSlice.js",
+      "/Users/differenz42/Desktop/tutor-app/src/modules/session/Activity/components/OthersTab.jsx",
+      "/Users/differenz42/Desktop/tutor-app/src/modules/students/features/studentSlice.js",
+      "/Users/differenz42/Desktop/tutor-app/src/services/api.js",
+      "/Users/differenz42/Desktop/tutor-app/src/services/localStorage.js",
+      "/Users/differenz42/Desktop/tutor-app/src/services/sessionStorage.js",
+      "/Users/differenz42/Desktop/tutor-app/src/modules/timesheet/features/timeSheetSlice.js",
+      "/Users/differenz42/Desktop/tutor-app/src/modules/remarkReport/features/reportRemarkSlice.js"
+    ]
+  }
+}
